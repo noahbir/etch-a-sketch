@@ -1,10 +1,10 @@
-function createGrid() {
+function createGrid(n) {
     const container = document.querySelector(".grid-container")
-    for(let i = 0; i < 16; ++i) {
+    for(let i = 0; i < n; ++i) {
         const column = document.createElement("div");
         column.classList.add("grid-column");
         container.appendChild(column);
-        for(let j = 0; j < 16; ++j) {
+        for(let j = 0; j < n; ++j) {
             const row = document.createElement("div");
             row.classList.add("grid-row");
             column.appendChild(row);
@@ -12,8 +12,11 @@ function createGrid() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    createGrid();
+const button = document.getElementById("save-button");
+button.addEventListener("click", () => {
+    var userInput = document.getElementById("user-input").value;
+    console.log("User input: " + userInput);
+    createGrid(userInput);
     const divs = document.querySelectorAll(".grid-row");
 
     divs.forEach((div) => {

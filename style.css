@@ -24,3 +24,8 @@ html, body {
     flex: 1;
     border: 1px solid black
 }
+
+.form-container {
+    text-align: center;
+    padding: 30px
+}
