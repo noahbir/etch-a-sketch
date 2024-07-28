@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-column {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    flex: 1;
+}
+
+.grid-row {
+    flex: 1;
+    border: 1px solid black
+}
